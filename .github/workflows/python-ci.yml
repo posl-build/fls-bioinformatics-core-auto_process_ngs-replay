@@ -3,12 +3,12 @@
 
 name: Python CI
 
-on: [push, pull_request]
-
+on:
+  workflow_dispatch:
 jobs:
   build:
 
-    runs-on: ubuntu-24.04
+    runs-on: self-hosted
     strategy:
       fail-fast: false
       matrix:
